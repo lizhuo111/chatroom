@@ -36,17 +36,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="buffer\buffer.h" />
+    <ClInclude Include="client\client.h" />
     <ClInclude Include="epoller\epoller.h" />
     <ClInclude Include="pool\pool.h" />
     <ClInclude Include="pool\sqlconnRALL.h" />
     <ClInclude Include="pool\threadpool.h" />
-    <ClInclude Include="testTCP\webserver.h" />
+    <ClInclude Include="util\base64Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="buffer\buffer.cpp" />
+    <ClCompile Include="client\client.cpp" />
+    <ClCompile Include="client\源.cpp" />
     <ClCompile Include="epoller\epoller.cpp" />
     <ClCompile Include="pool\pool.cpp" />
-    <ClCompile Include="testTCP\webserver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="client\resources\1.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{a8b1e220-c125-416e-ab36-f298e6f1bc1f}</ProjectGuid>

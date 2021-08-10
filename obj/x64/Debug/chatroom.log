@@ -1,0 +1,21 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.48.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  正在链接对象
+C:\Users\keda\Desktop\Projectweb\chatroom\obj\x64\Debug\client.o : error : In function `client::connRedis()':
+C:\Users\keda\Desktop\Projectweb\chatroom\client\client.cpp(34): error : undefined reference to `redisConnect'
+C:\Users\keda\Desktop\Projectweb\chatroom\obj\x64\Debug\pool.o : error : In function `pool::GetConn()':
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(13): error : undefined reference to `sem_wait'
+C:\Users\keda\Desktop\Projectweb\chatroom\obj\x64\Debug\pool.o : error : In function `pool::FreeConn(st_mysql*)':
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(30): error : undefined reference to `sem_post'
+C:\Users\keda\Desktop\Projectweb\chatroom\obj\x64\Debug\pool.o : error : In function `pool::Init(char const*, int, char const*, char const*, char const*, int)':
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(44): error : undefined reference to `mysql_init'
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(45): error : undefined reference to `mysql_real_connect'
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(49): error : undefined reference to `sem_init'
+C:\Users\keda\Desktop\Projectweb\chatroom\obj\x64\Debug\pool.o : error : In function `pool::ClosePool()':
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(60): error : undefined reference to `mysql_close'
+C:\Users\keda\Desktop\Projectweb\chatroom\pool\pool.cpp(62): error : undefined reference to `mysql_server_end'
+collect2 : error : ld returned 1 exit status
